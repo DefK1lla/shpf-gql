@@ -1,0 +1,37 @@
+.product {
+  padding: 20px;
+  color: #002244;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #fff;
+  border-radius: 15px;
+  line-height: 140%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+.content {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.button {
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  background: #306cce;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.button:hover {
+  background: #72a1ed;
+  cursor: pointer;
+}

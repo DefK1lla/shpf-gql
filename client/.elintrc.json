@@ -1,0 +1,76 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "eslint-plugin-jest",
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "semi": "off",
+    "quotes": [0, "single"],
+    "jsx-quotes": [2, "prefer-single"],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": "off",
+    "no-unused-vars": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "ignore",
+          ":": "ignore"
+        }
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-curly-spacing": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "comma-dangle": "off",
+    "comma-spacing": [
+      1,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "types": ["boolean"],
+        "format": ["camelCase"],
+        "custom": {
+          "regex": "^(is|are|has|was|should|can)",
+          "match": true
+        }
+      },
+      {
+        "selector": "property",
+        "types": ["boolean"],
+        "format": ["camelCase"],
+        "custom": {
+          "regex": "^(is|are|has|was|should|can)",
+          "match": true
+        }
+      }
+    ]
+  }
+}
